@@ -1,0 +1,24 @@
+name: Pull on specific action
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo "Build"
+        
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "tested"
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print deploy
+        run: echo "deployed."
