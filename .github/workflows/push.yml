@@ -1,4 +1,4 @@
-name: Push to Main
+name: Push to Main branch
 
 on:
   push:
@@ -9,5 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a build command
-        run: echo "Code was pushed to main"
+      - name: Print build
+        run: echo "Build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Print test
+       run: echo "tested"
+  deploy:  
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print deploy
+        run: echo "deployed."
