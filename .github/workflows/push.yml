@@ -9,7 +9,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository code
-        uses: actions/checkout@v4
       - name: Run a build command
         run: echo "Code was pushed to main"
