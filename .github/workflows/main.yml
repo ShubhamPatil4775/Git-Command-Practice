@@ -1,0 +1,23 @@
+name: manual workflow file
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo "Build"
+        
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo "tested"
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print deploy
+        run: echo "deployed."
