@@ -1,4 +1,4 @@
-name: Pull_request specific action
+name: Pull_request 
 
 on: pull_request
 
